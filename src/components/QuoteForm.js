@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 import { connect } from 'react-redux';
-import callbacks from '../actions/quotes';
+import {addQuote} from '../actions/quotes';
 
 class QuoteForm extends Component {
 
@@ -78,7 +78,7 @@ class QuoteForm extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    addQuote: (quoteObj)=>dispatch(callbacks.addQuote(quoteObj))
+    addQuote: (quoteObj)=>dispatch(addQuote(quoteObj))
   }
 }
 export default connect(null, mapDispatchToProps)(QuoteForm);

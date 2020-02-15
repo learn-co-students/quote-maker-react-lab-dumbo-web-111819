@@ -29,9 +29,3 @@
 }
 
 
-export default {
-    addQuote,
-    removeQuote,
-    upvoteQuote,
-    downvoteQuote
-}
